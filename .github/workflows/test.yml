@@ -1,0 +1,10 @@
+name: 测试工作流是否生效
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 测试打印
+        run: echo "工作流识别成功！"
